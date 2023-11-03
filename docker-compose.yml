@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  site:
+    image: arkmodding.net:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    container_name: site
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
