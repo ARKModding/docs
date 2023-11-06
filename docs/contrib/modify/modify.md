@@ -1,6 +1,6 @@
 ---
-sidebar_position: 50
-title: 5. Add / Modify Content
+sidebar_position: 40
+title: 4. Add / Modify Content
 ---
 
 # Add / Modify Content

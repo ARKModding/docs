@@ -11,6 +11,5 @@ This can be done in a few simple steps which we will explain in detail below:
 2. [Clone your forked repository to your local machine](clone.md)
 3. [Initial setup for Docusaurus](setup.md)
 4. [Add / modify content](modify/modify.md)
-5. Commit and push changes to your forked repository
-6. Create a pull request to the ARK Modding documentation repository
-7. We accept your pull request and the changes are live!
+5. [Contribute your changes back to the ARK Modding team](pr.md)
+6. We accept your pull request and the changes are live!

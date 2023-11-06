@@ -1,6 +1,6 @@
 ---
-sidebar_position: 40
-title: 4. Initial Setup
+sidebar_position: 30
+title: 3. Initial Setup
 ---
 
 # Initial setup for Docusaurus
