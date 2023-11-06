@@ -6,7 +6,7 @@ RUN apk update && apk upgrade
 FROM base AS dev
 
 COPY yarn.lock ./
-RUN yarn install
+RUN yarn set version stable && yarn install
 
 ENTRYPOINT ["yarn", "run", "start", "--host=0.0.0.0", "--port=3000"]
 

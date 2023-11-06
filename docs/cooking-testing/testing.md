@@ -35,6 +35,13 @@ open it and delete the contents from within it. Extract the Mod client files fro
 zip (`MyMod-Windows.zip`) here.
 
 ### Server Setup
+:::tip Install a Server
+
+If you do not have a server setup already, follow the 
+[Dedicated Server Setup](./server-setup.md) guide.
+
+:::
+
 Ensure the Mod is installed by the server by using `-mods=<ModId>` launch option using
 the Mod ID. You only have to ensure the server is on the latest version of the Mod
 before copying your files in. If this is a Mod ID for a Mod which rarely updates, you 
@@ -60,5 +67,12 @@ If you are the owner/uploaded of the Mod, you will see the Mod in the game clien
 a server following the steps provided bellow.
 
 ### Server Setup
+:::tip Install a Server
+
+If you do not have a server setup already, follow the
+[Dedicated Server Setup](./server-setup.md) guide.
+
+:::
+
 Install the Mod by launching the server with `-mods=<ModId>-dev` launch option using the
 Mod ID. This will install the latest cooked build for the Mod.

@@ -21,7 +21,7 @@ The essentials required to create a crafting station are as follows:
     - Descriptive Name
     - Use Placement Collision Check
 
-![Structure Defaults](imgs/StructureDefaults.png)
+![Structure Defaults](/img/docs/common-mods/crafting-station/StructureDefaults.png)
 
 :::info
 I turned Use Placement Collision Check off just to simplify the process. Normally you would leave it on and adjust the placement settings, otherwise this structure can collide with all other building pieces.
@@ -42,7 +42,7 @@ I turned Use Placement Collision Check off just to simplify the process. Normall
     - Force Allow Crafting For Inventory Components
         - Add any `InventoryComponent` classes you want to force allow to be craftable in here
 
-![Inventory Component Defaults](imgs/InventoryComponentDefaults.png)
+![Inventory Component Defaults](/img/docs/common-mods/crafting-station/InventoryComponentDefaults.png)
 
 :::info
 You do not need Force Allow Crafting for Inventory Components to be used, unless you're adding items that normally require being crafted in other inventories. ie. Metal Hatchet and the Smithy
@@ -59,7 +59,7 @@ You do not need Force Allow Crafting for Inventory Components to be used, unless
     - Structure To Build
         - This is the Structure Blueprint created in step 1
 
-![Primal Item Defaults](imgs/PrimalItemDefaults.png)
+![Primal Item Defaults](/img/docs/common-mods/crafting-station/PrimalItemDefaults.png)
 
 :::info
 There are likely other settings you will want to play with to get it to your like(crafting requirements, icon, name, etc).
@@ -77,7 +77,7 @@ There are likely other settings you will want to play with to get it to your lik
     - Blue Print Entry
         - This is the item created in step 3
 
-![Engram Entry Defaults](imgs/EngramDefaults.png)
+![Engram Entry Defaults](/img/docs/common-mods/crafting-station/EngramDefaults.png)
 
 :::info
 Give Blueprint to Play Inventory allows the item to be crafted in your inventory
@@ -88,7 +88,7 @@ Give Blueprint to Play Inventory allows the item to be crafted in your inventory
 - Click Add in the Components window.
 - Select your newly created inventory component.
 
-![Add Inventory Comp to Structure](imgs/AddInventoryToStructure.png)
+![Add Inventory Comp to Structure](/img/docs/common-mods/crafting-station/AddInventoryToStructure.png)
 
 ## Step 6 - ModDataAsset Config
 - Open your `ModDataAsset(MDA)` blueprint in your root mod folder
@@ -99,7 +99,7 @@ Give Blueprint to Play Inventory allows the item to be crafted in your inventory
         - The Structure from step 1
     - Additional Structure Engrams
 
-![ModDataAsset Settings](imgs/ModDataAsset.png)
+![ModDataAsset Settings](/img/docs/common-mods/crafting-station/ModDataAsset.png)
 
 :::info
 If you want your item to be crafted in a vanilla container, <ins>Additional Structure Engrams</ins> is the field to add it to. You fill in <ins>For Class</ins> with the Structure you want to add it to(ie: StorageBox_AnvilBench) and the Item you want to add to it(ie: your newly created PrimalItem)
@@ -108,13 +108,13 @@ If you want your item to be crafted in a vanilla container, <ins>Additional Stru
 ## --- Results ---
 
 ## Engrams
-![ModDataAsset Settings](imgs/Engram.png)
+![ModDataAsset Settings](/img/docs/common-mods/crafting-station/Engram.png)
 
 ## Structure Player Inventory
-![ModDataAsset Settings](imgs/CraftableInInventory.png)
+![ModDataAsset Settings](/img/docs/common-mods/crafting-station/CraftableInInventory.png)
 
 ## tructure Vanilla Smithy
-![ModDataAsset Settings](imgs/CraftableInVanillaContainer.png)
+![ModDataAsset Settings](/img/docs/common-mods/crafting-station/CraftableInVanillaContainer.png)
 
 ## Vanilla Items in Custom Structure
-![ModDataAsset Settings](imgs/AddVanillaItemToCustomStructure.png)
+![ModDataAsset Settings](/img/docs/common-mods/crafting-station/AddVanillaItemToCustomStructure.png)
