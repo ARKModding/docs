@@ -7,7 +7,7 @@ sidebar_position: 0
 In the following sections we will show you how to add your own content to the ARK Modding documentation.
 This can be done in a few simple steps which we will explain in detail below:
 
-1. Fork the ARK Modding documentation repository
+1. [Fork the ARK Modding documentation repository](#fork)
 2. Clone your forked repository to your local machine
 3. Add/modify content
 4. Preview changes locally
@@ -15,7 +15,7 @@ This can be done in a few simple steps which we will explain in detail below:
 6. Create a pull request to the ARK Modding documentation repository
 7. We accept your pull request and the changes are live!
 
-## Forking the ARK Modding Documentation Repository
+## Forking the ARK Modding Documentation Repository {#fork}
 
 "Forking" simply means creating your own copy of the documentation on GitHub.com that you can work on freely and use to submit your changes to the ARK Modding team.
 
