@@ -11,7 +11,7 @@ Generally all pages are located in the `docs` folder. Depending on the type of g
 
 - If you want to provide documentation for your own code, go into the `mods` folder and create a new folder with the name of your mod. Then create a new file in that folder.
 - If you want to provide a guide on modding or mapping, select an appropriate existing folder (such as `cooking-testing`) or create a new one that fits your topic.
-- If you want to improvie this contribution guide, go into the `contrib` folder and create a new file there.
+- If you want to improvie this contribution guide, go into the `contribute` folder and create a new file there.
 
 
 :::tip
