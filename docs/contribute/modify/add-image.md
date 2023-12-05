@@ -6,7 +6,7 @@ sidebar_position: 30
 
 You will likely want to add images to your page. 
 
-First, place the image in the corresponding folder in the `static/img` directory. For example for this page you would place it in `static/img/docs/contrib/modify`.
+First, place the image in the corresponding folder in the `static/img` directory. For example for this page you would place it in `static/img/docs/contribute/modify`.
 
 :::tip
 Make sure to give the image a descriptive file name!
@@ -16,7 +16,7 @@ Then, add the image to your page using the following syntax:
 
 ```markdown
 
-![Image Description](/img/docs/contrib/modify/my_test_image.png)
+![Image Description](/img/docs/contribute/modify/my_test_image.png)
 
 ```
 

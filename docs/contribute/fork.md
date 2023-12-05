@@ -9,7 +9,7 @@ title: 1. Creating a Fork
 
 Visit https://github.com/ARKModding/site and click the "Fork" button. 
 
-![Fork Button](/img/docs/contrib/fork.png)
+![Fork Button](/img/docs/contribute/fork.png)
 
 Follow the instructions on the screen, optionally set a name and description, then click "Create fork".
 

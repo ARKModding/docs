@@ -28,10 +28,10 @@ To create a pull request you need to:
 
 1. Visit your forked repository on GitHub.com
 2. Click the "Contribute" button above the file list and select "Open pull Request"
-    ![Open Pull Request Button](/img/docs/contrib/open_pr.png)
+    ![Open Pull Request Button](/img/docs/contribute/open_pr.png)
 3. You will be taken to a page showing a comparison between the current state of the ARK Modding documentation and your forked repository. Here select "Create Pull Request".
 4. Now enter a descriptive title and a useful description of your changes, then click "Draft pull request" or select "Create pull request" from the dropdown.   
-    ![Create Pull Request Button](/img/docs/contrib/create_pr.png)    
+    ![Create Pull Request Button](/img/docs/contribute/create_pr.png)    
     A draft pull request will indicate to the ARK Modding team that your changes are not yet ready to be merged, a normal pull request that you are ready for your changes to be merged.
     :::tip
     Make sure to check the "Allow edits by maintainers" checkbox, this allows Staff to directly fix small issues in your pull request without having to ask you to do it.
