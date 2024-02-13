@@ -22,6 +22,7 @@ jobs:
         helm upgrade --install "site-pr-${{ github.event.pull_request.number }}" \
           --namespace arkmodding \
           -f overrides.yaml \
+          --wait \
           ./helm/site
 
     - name: Test Release Readiness
