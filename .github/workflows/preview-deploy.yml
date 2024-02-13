@@ -1,0 +1,30 @@
+name: Deploy Preview
+
+on:
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: arc-runner-set
+    steps:
+    - uses: actions/checkout@v4
+    - uses: azure/setup-kubectl@v3
+    - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y unzip gettext
+    - uses: azure/setup-helm@v3
+      id: install
+
+    - name: Generate Overrides
+      run: PR_NUMBER=${{ github.event.pull_request.number }} envsubst < ./helm/overrides.yaml > overrides.yaml
+
+    - name: Install/Upgrade Release
+      run: |
+        helm upgrade --install "site-pr-${{ github.event.pull_request.number }}" \
+          --namespace arkmodding \
+          -f overrides.yaml \
+          ./helm/site
+
+    - name: Test Release Readiness
+      run: |
+        helm test "site-pr-${{ github.event.pull_request.number }}" \
+          --namespace arkmodding
