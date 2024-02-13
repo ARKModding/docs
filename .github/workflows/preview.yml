@@ -1,0 +1,18 @@
+name: Preview PR
+
+on:
+  pull_request:
+    types: [synchronize, labeled, unlabeled, closed, reopened]
+
+jobs:
+  preview-build:
+    if: github.event.action == 'synchronize' && contains(github.event.pull_request.labels.*.name, 'preview') || github.event.action == 'labeled' && github.event.label.name == 'preview' || github.event.action == 'reopened' && contains(github.event.pull_request.labels.*.name, 'preview')
+    uses: ./.github/workflows/docker.yml
+    
+  preview-deploy:
+    if: github.event.action == 'synchronize' && contains(github.event.pull_request.labels.*.name, 'preview') || github.event.action == 'labeled' && github.event.label.name == 'preview' || github.event.action == 'reopened' && contains(github.event.pull_request.labels.*.name, 'preview')
+    uses: ./.github/workflows/preview-deploy.yml
+
+  preview-cleanup:
+    if: github.event.action == 'unlabeled' && github.event.label.name == 'preview' || github.event.action == 'closed' && contains(github.event.pull_request.labels.*.name, 'preview')
+    uses: ./.github/workflows/preview-cleanup.yml

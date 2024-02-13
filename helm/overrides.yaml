@@ -1,0 +1,18 @@
+image:
+  tag: $GITHUB_SHA
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    acme.cert-manager.io/http01-edit-in-place: "true"
+    cert-manager.io/cluster-issuer: letsencrypt
+    cert-manager.io/issue-temporary-certificate: "true"
+  hosts:
+    - host: pr-$PR_NUMBER.beta.arkmodding.net
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls:
+    - secretName: site-pr-$PR_NUMBER-tls
+      hosts:
+        - pr-$PR_NUMBER.beta.arkmodding.net
